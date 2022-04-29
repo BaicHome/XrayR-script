@@ -114,7 +114,8 @@ install_XrayR() {
             echo -e "${red}检测 XrayR 版本失败，可能是超出 Github API 限制，将自动进行XrayR 0.8.0版本的安装${plain}"
                     echo -e "开始安装"
         wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip http://sh.aogo.cc/xrayr/v0.8.0/XrayR-linux-${arch}.zip
-        else
+        fi
+        if [[ -n "$last_version" ]]; then
            echo -e "检测到 XrayR 最新版本：${last_version}，开始安装"
         wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip https://github.com/BaicHome/XrayR/releases/download/${last_version}/XrayR-linux-${arch}.zip
         fi
