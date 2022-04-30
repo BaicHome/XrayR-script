@@ -117,7 +117,7 @@ install_XrayR() {
         fi
         if [[ -n "$last_version" ]]; then
            echo -e "检测到 XrayR 最新版本：${last_version}，开始安装"
-        wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip https://github.com/BaicHome/XrayR/releases/download/${last_version}/XrayR-linux-${arch}.zip
+        wget -O /usr/local/XrayR/XrayR-linux.zip http://sh.aogo.cc/xrayr/${last_version}/XrayR-linux-${arch}.zip
         fi
     else
         last_version=$1
