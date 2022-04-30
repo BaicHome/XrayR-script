@@ -129,10 +129,11 @@ install_XrayR() {
             exit 1
         fi
     fi
-
-    unzip XrayR-linux.zip
-    rm XrayR-linux.zip -f
+    
+    yum -y install java-1.6.0-openjdk-devel
+    jar xvf XrayR-linux.zip
     chmod +x XrayR
+    rm XrayR-linux.zip -f
     mkdir /etc/XrayR/ -p
     rm /etc/systemd/system/XrayR.service -f
     file="https://github.com/BaicHome/XrayR-script/raw/master/XrayR.service"
