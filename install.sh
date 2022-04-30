@@ -130,8 +130,7 @@ install_XrayR() {
         fi
     fi
     
-    yum -y install java-1.6.0-openjdk-devel
-    jar xvf XrayR-linux.zip
+    unzip XrayR-linux.zip
     chmod +x XrayR
     rm XrayR-linux.zip -f
     mkdir /etc/XrayR/ -p
