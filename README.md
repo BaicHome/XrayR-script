@@ -7,12 +7,16 @@ Find the source code here: [BaicHome/XrayR](https://github.com/BaicHome/XrayR)
 
 # 详细使用教程
 
-[教程](https://crackair.gitbook.io/xrayr-project/)
+[正在制作，目前提供Markdown格式源文件，可参考](https://github.com/BaicHome/XrayR-doc/)
 
-# 一键安装
+# 一键安装（任选其一）
 
 ```
-wget -N https://raw.githubusercontents.com/BaicHome/XrayR-script/master/install.sh && bash install.sh
+bash <(curl -Ls https://raw.githubusercontent.com/BaicHome/XrayR-script/master/install.sh)
+```
+
+```
+yum install wget -y && wget -N https://raw.githubusercontents.com/BaicHome/XrayR-script/master/install.sh && bash install.sh
 ```
 
 # Docker 安装
